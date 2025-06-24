@@ -4,69 +4,175 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Srijes Bridal Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Srijes Bridal Studio</div>
-    <button class="hamburger">☰</button>
-    <nav class="nav-menu">
-      <a href="#hero">Home</a>
-      <a href="#salon">Salon</a>
-      <a href="#bridal">Bridal</a>
-      <a href="#training">Training</a>
-    </nav>
-  </header>
-  <main>
-    <section id="hero" class="hero">
-      <h1>Srijes Bridal Studio, Salon & Training Institute</h1>
-      <p>Your beauty journey begins here.</p>
-      <a class="btn" href="https://wa.me/<YourNumber>">Book Your Appointment</a>
-    </section>
-    <section id="salon" class="salon">
-      <h2>The Salon</h2>
-      <div class="founder">
-        <img src="public/images/founder.jpg" alt="Vanishri Joshi">
-        <ul>
-          <li>25 years of expertise in beauty, skin care and esthetics</li>
-          <li>CIDESCO certified</li>
-          <li>Leading educator & social media personality</li>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">Srijes Bridal Studio</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#salon">Salon</a></li>
+          <li><a href="#bridal">Bridal</a></li>
+          <li><a href="#training">Training</a></li>
         </ul>
-        <a href="https://youtube.com/…">Watch on YouTube</a>
+      </nav>
+      <a href="https://wa.me/<YourNumber>" class="btn btn-primary">Book Appointment</a>
+      <button id="menu-toggle" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container" data-aos="fade-up" data-aos-delay="200">
+      <h1>Your Beauty Journey Begins Here</h1>
+      <p>Experience 25 years of expertise in bridal, beauty & esthetics.</p>
+      <a href="https://wa.me/<YourNumber>" class="btn btn-primary">Book Your Appointment</a>
+    </div>
+  </section>
+  <section id="salon" class="section section--blue container" data-aos="fade-up">
+    <h2 class="section-title">What We Offer</h2>
+    <div class="grid grid-3">
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/100x100/?hair" alt="" class="icon">
+        <h3>Hair Services</h3>
+        <p>Cut, color & styling</p>
       </div>
-      <div class="services-grid">
-        <a href="services/hair.html">Hair</a>
-        <a href="services/beauty.html">Beauty</a>
-        <a href="services/makeup.html">Makeup</a>
-        <a href="services/bridal.html">Bridal</a>
-        <a href="services/esthetics.html">Advanced Esthetics</a>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/100x100/?makeup" alt="" class="icon">
+        <h3>Makeup & Bridal</h3>
+        <p>Every look perfected</p>
       </div>
-      <a class="btn" href="https://wa.me/<YourNumber>">Book Your Appointment</a>
-    </section>
-    <section id="bridal" class="bridal">
-      <h2>Bridal Studio</h2>
-      <ul>
-        <li>Pre-wedding skin & hair correction/improvisation</li>
-        <li>Dietary guidance</li>
-        <li>Permanent makeup</li>
-        <li>Event-look design (makeup, hair, saree draping)</li>
-        <li>Group makeovers (up to 20 guests)</li>
-        <li>Advanced bridal & group mehendi (up to 100 guests)</li>
-      </ul>
-      <a class="btn" href="https://wa.me/<YourNumber>">Book a Package</a>
-    </section>
-    <section id="training" class="training">
-      <h2>Training Institute</h2>
-      <p>Syllabus & curriculum designed for India & abroad. Experienced trainers & modern facilities.</p>
-      <h3>Top Course: Diploma in Cosmetology</h3>
-      <h4>Short Courses:</h4>
-      <ul>
-        <li>Beauty Course</li>
-        <li>Hair Course</li>
-        <li>Makeup Course</li>
-        <li>Specializations (Hair, Makeup, Mehendi, Advanced Esthetics)</li>
-      </ul>
-  </main>
-  <script defer src="js/main.js"></script>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/100x100/?skincare" alt="" class="icon">
+        <h3>Advanced Esthetics</h3>
+        <p>Facials & skin care</p>
+      </div>
+    </div>
+  </section>
+  <section id="bridal" class="section section--green container" data-aos="fade-up">
+    <h2 class="section-title">Bridal Studio</h2>
+    <div class="grid grid-3">
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/300x200/?bridal" alt="" class="card-img">
+        <h3>Skin & Hair Prep</h3>
+        <p>Pre-wedding correction & care</p>
+        <a href="https://wa.me/<YourNumber>" class="btn btn-primary">Book Package</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/300x200/?makeup,bridal" alt="" class="card-img">
+        <h3>Permanent Makeup</h3>
+        <p>Long-lasting perfection</p>
+        <a href="https://wa.me/<YourNumber>" class="btn btn-primary">Book Package</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/300x200/?group,mehendi" alt="" class="card-img">
+        <h3>Group Makeovers</h3>
+        <p>Up to 20 guests & mehendi up to 100</p>
+        <a href="https://wa.me/<YourNumber>" class="btn btn-primary">Book Package</a>
+      </div>
+    </div>
+  </section>
+  <section id="training" class="section container" data-aos="fade-up">
+    <h2 class="section-title">Signature Services</h2>
+    <div class="grid grid-3">
+      <div class="circle-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/200x200/?bridal,makeup" alt="">
+        <h3>Bridal Makeup</h3>
+      </div>
+      <div class="circle-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/200x200/?hair,style" alt="">
+        <h3>Hair Styling</h3>
+      </div>
+      <div class="circle-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/200x200/?skincare,facial" alt="">
+        <h3>Skincare Treatments</h3>
+      </div>
+    </div>
+  </section>
+  <section class="section section--blue container" data-aos="fade-up">
+    <h2 class="section-title">Training Institute Courses</h2>
+    <div class="grid grid-3">
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Diploma in Cosmetology</h3>
+        <p>Comprehensive 6-month program</p>
+        <a href="https://wa.me/<YourNumber>" class="btn btn-primary">Talk to Counsellor</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Makeup Certification</h3>
+        <p>Short intensive course</p>
+        <a href="https://wa.me/<YourNumber>" class="btn btn-primary">Talk to Counsellor</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Advanced Esthetics Workshop</h3>
+        <p>Hands-on masterclass</p>
+        <a href="https://wa.me/<YourNumber>" class="btn btn-primary">Talk to Counsellor</a>
+      </div>
+    </div>
+  </section>
+  <section class="section container">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="grid grid-2">
+      <blockquote class="testimonial" data-aos="flip-left">
+        "I felt like a queen on my wedding day…"<br>
+        <cite>— Aisha, Bride</cite>
+      </blockquote>
+      <blockquote class="testimonial" data-aos="flip-left">
+        "Their training changed my career…"<br>
+        <cite>— Priya, Student</cite>
+      </blockquote>
+    </div>
+  </section>
+  <section class="section section--green container">
+    <h2 class="section-title">FAQs</h2>
+    <div class="grid grid-3">
+      <div class="faq" data-aos="fade-up">
+        <h4>How do I book?</h4>
+        <p>Click "Book Appointment" to connect on WhatsApp.</p>
+      </div>
+      <div class="faq" data-aos="fade-up">
+        <h4>Cancellation policy?</h4>
+        <p>Please notify us 24 hrs in advance for full refund.</p>
+      </div>
+      <div class="faq" data-aos="fade-up">
+        <h4>Group discounts?</h4>
+        <p>Yes—ask us on WhatsApp for custom packages.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section mission">
+    <div class="container">
+      <p class="mission-text">
+        "Our mission is to make every bride feel radiant—inside and out."
+      </p>
+    </div>
+  </section>
+  <!-- TRAINING INSTITUTE -->
+  <!-- TESTIMONIALS -->
+  <!-- FAQs -->
+  <footer class="section container">
+    <div class="footer-grid grid grid-3">
+      <div>
+        <h4>Contact</h4>
+        <p>123 Bridal Lane, Hyderabad</p>
+        <p>+91-XXXXXXXXXX</p>
+        <p>info@srijesbridalstudio.com</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Sat: 10 AM–7 PM</p>
+        <p>Sun: Closed</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p><a href="#">Facebook</a>  <a href="#">Instagram</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
-</html>
+</html> 
